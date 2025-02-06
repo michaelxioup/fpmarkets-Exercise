@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpack Plain JS</title>
+    <link rel="stylesheet" href="styles.css">  <!-- Assuming you have a styles.css -->
+</head>
+<body>
+    <header class="header">
+        <div class="hero-slider">
+
+            <div class="slide">
+                <img src="assets/hero-slider-mobile.png" alt="hero-slider-mobile" class="large-3D-img hero-slider-slides">
+                <img src="assets/3D.png" alt="hero-slider-mobile" class="mobile-img hero-slider-slides">
+                <img src="assets/hero-slider.png" alt="hero-slider" class="large-img hero-slider-slides">
+                <div class="Rectangle"></div>
+            </div>
+        
+            <!-- Slide 2 (same images, but can be different) -->
+            <div class="slide">
+                <img src="assets/hero-slider-mobile.png" alt="hero-slider-mobile" class="large-3D-img hero-slider-slides">
+                <img src="assets/3D.png" alt="hero-slider-mobile" class="mobile-img hero-slider-slides">
+                <img src="assets/hero-slider.png" alt="hero-slider" class="large-img hero-slider-slides">
+                <div class="Rectangle"></div>
+            </div>
+
+            <button class="display-left-arrow" onclick="plusDivs(-1)"></button>
+            <button class="display-right-arrow" onclick="plusDivs(1)"></button>
+        </div>
+        
+    
+        <div class="logo-container">
+            <img src="assets/fpm-logo.png" alt="fpm-logo" class="logo">
+        </div>
+    
+        <nav class="menu">
+            <ul>
+                <li><a href="#quickStart">Quick Start</a></li>
+                <li><a href="#news">Trading</a></li>
+                <li><a href="#platforms">Platforms</a></li>
+                <li><a href="#academy">Academy</a></li>
+                <li><a href="#company">Company</a></li>
+            </ul>
+        </nav>
+    
+        <div class="controls">
+            <!-- Language + Login Group -->
+            <div class="lang-login">
+                <div class="lang-container">
+                    <img src="assets/Mask group.png" alt="lang-pic" class="lang">
+                    <span class="language">EN</span>
+                </div>
+                <button class="login">LOGIN</button>
+            </div>
+        
+            <!-- Open Live Button (separate) -->
+            <div class="light-button">
+                <button class="openLive">OPEN LIVE</button>
+            </div>
+        </div>
+        
+    
+        <div class="ham-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    
+        <div class="off-screen-menu">
+            <ul>
+                <li><a href="#quickStart">Quick Start</a></li>
+                <li><a href="#news">Trading</a></li>
+                <li><a href="#platforms">Platforms</a></li>
+                <li><a href="#academy">Academy</a></li>
+                <li><a href="#company">Company</a></li>
+                <li><button class="login">Login</button></li>
+                <li><button class="openLive">Open Live</button></li>
+            </ul>
+        </div>
+    </header>
+
+
+    
+    <script src="bundle.js"></script>
+    <script>
+let slideIndex = 0;
+const slides = document.querySelectorAll(".slide");
+
+function showSlides(n) {
+    if (n >= slides.length) slideIndex = 0;
+    if (n < 0) slideIndex = slides.length - 1;
+
+    slides.forEach(slide => slide.style.display = "none"); // Hide all slides
+    slides[slideIndex].style.display = "flex"; // Show active slide
+}
+
+function plusDivs(n) {
+    slideIndex += n;
+    showSlides(slideIndex);
+}
+
+// Initialize the first slide
+showSlides(slideIndex);
+
+// Optional: Auto-slide every 5 seconds
+setInterval(() => plusDivs(1), 5000);
+
+
+// JavaScript to toggle the menu
+const hamMenu = document.querySelector('.ham-menu');
+const offScreenMenu = document.querySelector('.off-screen-menu');
+
+// Add event listener to toggle the menu visibility on hamburger click
+hamMenu.addEventListener('click', () => {
+    console.log("Hamburger menu clicked");
+    offScreenMenu.classList.toggle('active');  // Toggle visibility
+    console.log("Is 'active' class on menu?", offScreenMenu.classList.contains('active'));
+});
+
+    </script>
+</body>
+</html>
