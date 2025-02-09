@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webpack Plain JS</title>
-    <link rel="stylesheet" href="styles.css">  <!-- Assuming you have a styles.css -->
+    <link rel="stylesheet" href="styles.css">  
 </head>
 <body>
+    
     <header class="header">
         <div class="hero-slider">
 
@@ -17,7 +19,7 @@
                 <div class="Rectangle"></div>
             </div>
         
-            <!-- Slide 2 (same images, but can be different) -->
+            
             <div class="slide">
                 <img src="assets/hero-slider-mobile.png" alt="hero-slider-mobile" class="large-3D-img hero-slider-slides">
                 <img src="assets/3D.png" alt="hero-slider-mobile" class="mobile-img hero-slider-slides">
@@ -25,11 +27,96 @@
                 <div class="Rectangle"></div>
             </div>
 
+            <div class="small-Container">
+                <div class="Frame8">
+                    <div class="Frame6">
+                        <p class="larger-text">Performance-driven
+                            technology and
+                            ultra-low spreads </p>
+                            <p class="Smaller-text">
+                                Trade the global markets 
+                                with a leading Forex broker.
+                            </p>
+                    </div>
+                    <div class="Frame7">
+                        <button class="T-button">START TRADING</button>
+                        <button class="N-button">TRY DEMO</button>
+                    </div>
+                    
+                </div>
+                <div class="Frame9">
+                    <div class="pag1"></div>
+                    <div class="pag2"></div>
+                </div>
+            </div>
+            
             <button class="display-left-arrow" onclick="plusDivs(-1)"></button>
             <button class="display-right-arrow" onclick="plusDivs(1)"></button>
+
+            <div class="ticker-container">
+                <div class="ticker-text">
+                    <p>
+                        <span class="currency">AUDUSD</span>
+                        <span class="arrow-up arrow">↗</span>
+                        <span class="spread">Spread</span>
+                        <span class="spread-green">0.00</span>
+                        <span class="bid-ask">Bid </span>
+                        <span class="bid-ask"> 0.64287</span>
+                        <span class="bid-ask">Ask </span>
+                        <span class="bid-ask-red">0.64403 </span>
+                    </p>
+                    <p>
+                        <span class="currency">GBPUSD</span>
+                        <span class="arrow-down arrow">↘</span>
+                        <span class="spread">Spread</span>
+                        <span class="spread-green">0.00</span>
+                        <span class="bid-ask">Bid</span>
+                        <span  class="bid-ask-red">1.22019</span>
+                        <span class="bid-ask ">Ask </span>
+                        <span class="bid-ask-red">1.22055</span>
+                    </p>
+                    <p>
+                        <span class="currency">USDJPY</span>
+                        <span class="arrow-up arrow">↗</span>
+                        <span class="spread">Spread 0.99</span>
+                        <span class="bid-ask">Bid</span>
+                        <span class="bid-ask-green">149.309</span>
+                        <span class="bid-ask">Ask</span>
+                        <span class="bid-ask-green">149.408</span>
+                    </p>
+                    <p>
+                        <span class="currency">AUU200</span>
+                        <span class="arrow-down arrow">↘</span>
+                        <span class="spread">Spread 1.3</span>
+                        <span class="bid-ask">Bid </span>
+                        <span class="bid-ask-red">6940.150</span>
+                        <span class="bid-ask">Ask </span>
+                        <span class="bid-ask-green">6941.045</span>
+                    </p>
+                    <p>
+                        <span class="currency">AUDUSD</span>
+                        <span class="arrow-up arrow">↗</span>
+                        <span class="spread">Spread</span>
+                        <span class="spread-green">0.00</span>
+                        <span class="bid-ask">Bid </span>
+                        <span class="bid-ask"> 0.64287</span>
+                        <span class="bid-ask">Ask </span>
+                        <span class="bid-ask-red">0.64403 </span>
+                    </p>
+                    <p>
+                        <span class="currency">GBPUSD</span>
+                        <span class="arrow-down arrow">↘</span>
+                        <span class="spread">Spread</span>
+                        <span class="spread-green">0.00</span>
+                        <span class="bid-ask">Bid</span>
+                        <span  class="bid-ask-red">1.22019</span>
+                        <span class="bid-ask ">Ask </span>
+                        <span class="bid-ask-red">1.22055</span>
+                    </p>
+                </div>
+            </div>
         </div>
         
-    
         <div class="logo-container">
             <img src="assets/fpm-logo.png" alt="fpm-logo" class="logo">
         </div>
@@ -45,7 +132,7 @@
         </nav>
     
         <div class="controls">
-            <!-- Language + Login Group -->
+            
             <div class="lang-login">
                 <div class="lang-container">
                     <img src="assets/Mask group.png" alt="lang-pic" class="lang">
@@ -54,7 +141,7 @@
                 <button class="login">LOGIN</button>
             </div>
         
-            <!-- Open Live Button (separate) -->
+            
             <div class="light-button">
                 <button class="openLive">OPEN LIVE</button>
             </div>
@@ -68,31 +155,560 @@
         </div>
     
         <div class="off-screen-menu">
-            <ul>
-                <li><a href="#quickStart">Quick Start</a></li>
-                <li><a href="#news">Trading</a></li>
-                <li><a href="#platforms">Platforms</a></li>
-                <li><a href="#academy">Academy</a></li>
-                <li><a href="#company">Company</a></li>
-                <li><button class="login">Login</button></li>
-                <li><button class="openLive">Open Live</button></li>
+            <div class="menu-top">
+                <div class="logo-container-menu">
+                    <img src="assets/fpm-logo(1).png" alt="fpm-logo" class="logo">
+                </div>
+                <div class="lang-container-menu">
+                    <img src="assets/Mask group.png" alt="lang-pic" class="lang">
+                    <span class="language">EN</span>
+                </div>
+                <button class="close-menu">✕</button> 
+            </div>
+            <div class="menu-header">
+                <button class="openLive-header">OPEN LIVE</button>
+                <button class="login-header">LOGIN</button>
+            </div>
+            <ul class="menu-list">
+                <li><a href="" class="quickstart">QUICK START <span class="arrow-menu">↓</span></a></li>
+                <div class="Frame39-menu">
+                    <span class="Titles-menu">Introduction</span>
+                </div>
+                <div class="Frame37-menu">
+                    <a href="url" class="text-menu">Open An Account</a> 
+                    <a href="url" class="text-menu">Try a Demo</a>
+                    <a href="url" class="text-menu">Client Portal</a> 
+                    <a href="url" class="text-menu">WebTrader Login</a>
+                    <a href="url" class="text-menu">Traders Hub Blog</a> 
+                    <a href="url" class="text-menu">Trading Knowledge</a>
+                    <a href="url" class="text-menu">Education</a>
+                   </div>
+                   <hr class="styled-hr">
+                   <div class="Frame39-menu">
+                    <span class="Titles-menu">Markets</span>
+                </div>
+                
+<div class="Frame37-menu">
+                        <a href="url" class="text-menu">What is Forex Trading?</a> 
+                        <a href="url" class="text-menu">What is CFD Trading?</a>
+                        <a href="url" class="text-menu">What You Can Trade</a> 
+                        <a href="url" class="text-menu">Forex</a>
+                        <a href="url" class="text-menu">Shares</a> 
+                        <a href="url" class="text-menu">Metals</a>
+                        <a href="url" class="text-menu">Shares</a> 
+                       </div>
+                       <hr class="styled-hr">
+                       <div class="Frame39-menu">
+                        <span class="Titles-menu">Trading Platforms</span>
+                    </div>
+                  
+<div class="Frame37-menu">
+                        <a href="url" class="text-menu">Metatrader 4 (MT4)</a> 
+                        <a href="url" class="text-menu">Metatrader 5 (MT5)</a>
+                        <a href="url" class="text-menu">Trader</a> 
+                        <a href="url" class="text-menu">TradingView New</a>
+                        <a href="url" class="text-menu">Mobile Trading App</a> 
+                        <a href="url" class="text-menu">WebTrader</a>
+                       </div>
+                <li><a href="">TRADING <span class="arrow-menu">↓</span></a></li>
+                <li><a href="">PLATFORMS <span class="arrow-menu">↓</span></a></li>
+                <li><a href="">RESOURCES <span class="arrow-menu">↓</span></a></li>
             </ul>
         </div>
+        
     </header>
 
+    <div class="intro">
+        <div class="large-Container">
+            <span class="intro-Title">What can you trade with FP Markets?</span>
 
+            <div class="Carousel">
+                <div class="Frame16">
+                    <div class="Frame15">
+                        <div class="card">
+                            <p class="Titleimgs-dark Titleimgs " >Forex trading</p>
+                            <p class="smallertext-dark smallertext">60+ forex currency pairs on MT4</p>
+                            <div class="slide-intro">
+                                <img src="assets/Artboard 1@2x 1.png" alt="Artboard1" class="cardimg1">
+                            </div>
+                        </div>
+                     
+                        <div class="card">
+                            <p class="Titleimgs-dark Titleimgs" >Forex trading</p>
+                            <p class="smallertext-dark smallertext">60+ forex currency pairs on MT4</p>
+                            <div class="slide-intro">
+                                <img src="assets/Artboard 1@2x 1(1).png" alt="Artboard1" class="cardimg1">
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <p class="Titleimgs-white Titleimgs" >Forex trading</p>
+                            <p class="smallertext-white smallertext">60+ forex currency pairs on MT4</p>
+                            <div class="slide-intro">
+                                <img src="assets/Artboard 1@2x 1(2).png" alt="Artboard1" class="cardimg1">
+                            </div>
+                        </div>
+                        <div class="card">
+                            <p class="Titleimgs-white Titleimgs" >Forex trading</p>
+                            <p class="smallertext-white smallertext">60+ forex currency pairs on MT4</p>
+                            <div class="slide-intro">
+                                <img src="assets/Artboard 1@2x 1(3).png" alt="Artboard1" class="cardimg1">
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <p class="Titleimgs-dark Titleimgs " >Forex trading</p>
+                            <p class="smallertext-dark smallertext">60+ forex currency pairs on MT4</p>
+                            <div class="slide-intro">
+                                <img src="assets/Artboard 1@2x 1(5).png" alt="Artboard1" class="cardimg1">
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <p class="Titleimgs-dark Titleimgs" >Forex trading</p>
+                            <p class="smallertext-dark smallertext">60+ forex currency pairs on MT4</p>
+                            <div class="slide-intro">
+                                <img src="assets/Artboard 1@2x 1(6).png" alt="Artboard1" class="cardimg1">
+                            </div>
+                        </div>
+                        <div class="card">
+                            <p class="Titleimgs-dark Titleimgs" >Forex trading</p>
+                            <p class="smallertext-dark smallertext">60+ forex currency pairs on MT4</p>
+                            <div class="slide-intro">
+                                <img src="assets/Artboard 1@2x 1(7).png" alt="Artboard1" class="cardimg1">
+                            </div>
+                        </div>
+                        <div class="card">
+                            <p class="Titleimgs-white Titleimgs" >Forex trading</p>
+                            <p class="smallertext-white smallertext">60+ forex currency pairs on MT4</p>
+                            <div class="slide-intro">
+                                <img src="assets/Artboard 1@2x 1(8).png" alt="Artboard1" class="cardimg1">
+                            </div>
+                        </div>
+                    </div>
+            </div>    
+        </div> 
+        </div>
+        <div class="frame12">
+            <button class="display-left-arrow-carousel" onclick="plusDivscards(-1)"></button>
+            <button class="display-right-arrow-carousel" onclick="plusDivscards(1)"></button>      
+        </div> 
+    </div>
+
+    <div class="Frame33">
+         <img src="assets/Layer 525@2x 1.png" alt="layer33" class="Coin3D">
+        <div class="large-Container-Frame-33">
+            <div class="small-Container-Frame-33">
+                
+                <div class="frame23">
+                    <img src="assets/Layer 522@2x 1.png" alt="layer23" class="metrixs">
+                </div>
+                <div class="frame24">
+                    <div class="frame17">
+                        <span class="Title33">Why is FP Markets one of the world's most trusted Forex Brokers?</span>
+                        <span class="text33">
+                            50+ International Awards
+                            Globally Regulated
+                            Segregated Client Funds
+                            24/7^ Multilingual Customer Support
+                            Personal Account Managers
+                            15+ Years of Trading Experience
+                            500:1 Max Leverage</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+    <div class="Frame24L">
+        <div class="large-Container-Frame-24">
+            <div class="small-Container-Frame-24">
+                <div class="frame24-2">
+                    <div class="frame17-2">
+                        <span class="Title24">Copy Trading: follow top-performing traders</span>
+                        <span class="text24">
+                            Follow & copy top-performing traders
+                            Forex, Shares, Indices, Commodities, Metals, Bonds, Digital currencies & ETFs
+                            Become a copier or a provider
+                            No need to develop your own trading plan</span>
+
+                    <div class="light-button light-button-2">
+                        <button class="openLive">START TRADING</button>
+                    </div>
     
+                    </div>
+                </div>
+                <img src="assets/Group 532@2x 1.png" alt="layer24" class="Phone">
+            </div>
+        </div>
+    </div>
+
+    <div class="Frame25">
+        <div class="large-Container-Frame-25">
+                <div class="frame25s">
+                    <span class="Title25-mobile">Why is FP Markets one <br> of the  world's most  <br>trusted Forex Brokers?</span>
+                        <span class="Title25">Why is FP Markets one of the <br> world's most trusted Forex Brokers?</span>
+                </div>
+                <div class="IconStripbox">
+                    <div class="IconCard"> <img src="assets/Layer 577@2x 1.png" alt="IconCards" class="IconCardsimg"> <div class="frame28"> Multi-Regulated <br>Brand</div></div>
+                    <div class="IconCard"> <img src="assets/Layer 577@2x 1(1).png" alt="IconCards" class="IconCardsimg"> <div class="frame28"> Segregated  <br> Client Funds</div></div>
+                    <div class="IconCard"> <img src="assets/Layer 577@2x 1(2).png" alt="IconCards" class="IconCardsimg"> <div class="frame28"> 40+ International Awards </div></div>
+                    <div class="IconCard"> <img src="assets/Layer 577@2x 1(3).png" alt="IconCards" class="IconCardsimg"> <div class="frame28"> 24/7^ Multilingual Customer Support</div> </div>
+                    <div class="IconCard"> <img src="assets/Layer 577@2x 1(4).png" alt="IconCards" class="IconCardsimg"> <div class="frame28">  Consistently Tighter Spreads** </div></div>
+                </div>
+        </div>
+    </div>
+
+
+    <div class="Frame30">
+        <img src="assets/Layer 878 1.png" alt="couple" class="couple">
+        <div class="Rectangle7"></div>
+        <div class="small-Container-Frame-30">
+                <div class="frame45">
+                        <span class="Title45">A Forex Broker <br> you can trust</span>
+               
+                <div class="Auto-Text-Slider-Light">
+                    <div class="frame35"> 
+                        <div class="text-slide">
+                        <div class="textSlide">
+                            <p class="smallertext-white-30 smallertext30">Established and regulated since 2005, FP Markets is a global Financial Technology services Foreign Exchange (Forex) and Contracts for Differences (CFD) broker. We pride ourselves on delivering an exceptional trading experience and have been awarded as the #1 Value Global Forex Broker* on multiple occasions. </p>
+                        </div>
+                        <div class="textSlide">
+                            <p class="smallertext-white-30 smallertext30">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+                        </div>
+                        <div class="textSlide">
+                            <p class="smallertext-white-30 smallertext30">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+                        </div>
+                    </div>
+                         </div>
+                         <div class="Frame930">
+                            <div class="page1"></div>
+                            <div class="page2"></div>
+                            <div class="page3"></div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="Frame31">
+                <div class="large-Container-Frame-31">                  
+                            <div class="col">
+                               <div class="Frame39">
+                                <span class="Titles-footer">Quick Start & Resources</span>
+                               </div>
+                               <div class="Frame49">↓</div>
+                               <div class="Frame37">
+                                <a href="url" class="text">Open An Account</a> 
+                                <a href="url" class="text">Try a Demo</a>
+                                <a href="url" class="text">Client Portal</a> 
+                                <a href="url" class="text">WebTrader Login</a>
+                                <a href="url" class="text">Traders Hub Blog</a> 
+                                <a href="url" class="text">Trading Knowledge</a>
+                                <a href="url" class="text">Education</a>
+                               </div>
+                            </div>
+                            <div class="col">
+                                <div class="Frame39">
+                                    <span class="Titles-footer">Markets</span>
+                                </div>
+                                <div class="Frame49">↓</div>
+                                <div class="Frame37">
+                                    <a href="url" class="text">What is Forex Trading?</a> 
+                                    <a href="url" class="text">What is CFD Trading?</a>
+                                    <a href="url" class="text">What You Can Trade</a> 
+                                    <a href="url" class="text">Forex</a>
+                                    <a href="url" class="text">Shares</a> 
+                                    <a href="url" class="text">Metals</a>
+                                    <a href="url" class="text">Commodities</a>
+                                    <a href="url" class="text">Indices</a>
+                                    <a href="url" class="text">Derivatives</a> 
+                                    <a href="url" class="text">Futures</a>
+                                    <a href="url" class="text">Bonds</a> 
+                                    <a href="url" class="text">ETFs</a>
+                                   </div>
+                             </div>
+                             <div class="col">
+                                <div class="Frame39">
+                                    <span class="Titles-footer">Tools & Platforms</span>
+                                </div>
+                                <div class="Frame49">↓</div>
+                                <div class="Frame37">
+                                    <a href="url" class="text">Metatrader 4 (MT4)</a> 
+                                    <a href="url" class="text">Metatrader 5 (MT5)</a>
+                                    <a href="url" class="text">Trader</a> 
+                                    <a href="url" class="text">TradingView New</a>
+                                    <a href="url" class="text">Mobile Trading App</a> 
+                                    <a href="url" class="text">WebTrader</a>
+                                    <a href="url" class="text">VPS</a>
+                                    <a href="url" class="text">Autochartist</a>
+                                    <a href="url" class="text">Myfxbook</a> 
+                                    <a href="url" class="text">MAM/PAMM</a>
+                                    <a href="url" class="text">Social Trading</a> 
+                                    <a href="url" class="text">Signal Start</a>
+                                   </div>
+                             </div>
+                             <div class="col">
+                                <div class="Frame39">
+                                    <span class="Titles-footer">Trading Info</span>
+                                </div>
+                                <div class="Frame49">↓</div>
+                                <div class="Frame37">
+                                    <a href="url" class="text">MT4/5 Account Types</a> 
+                                    <a href="url" class="text">Deposit Funds</a>
+                                    <a href="url" class="text">Withdraw Funds</a> 
+                                    <a href="url" class="text">Margin Table</a>
+                                    <a href="url" class="text">Forex Spreads</a> 
+                                    <a href="url" class="text">Forex Swap Rates</a>
+                                    <a href="url" class="text">Leverage</a>
+                                    <a href="url" class="text">MT4/5 Fees & Charges</a>
+                                    <a href="url" class="text">Trader Fees & Charges</a> 
+                                    <a href="url" class="text">Trading Hours</a>
+                                   </div>
+                             </div>
+                             <div class="col">
+                                <div class="Frame39">
+                                    <span class="Titles-footer">About Us</span>
+                                </div>
+                                <div class="Frame49">↓</div>
+                                <div class="Frame37">
+                                    <a href="url" class="text">Why FP Markets?</a> 
+                                    <a href="url" class="text">About FP Markets?</a>
+                                    <a href="url" class="text">ECN Pricing</a> 
+                                    <a href="url" class="text">DMA Pricing</a>
+                                    <a href="url" class="text">Partner with FP Markets</a> 
+                                    <a href="url" class="text">FAQ</a>
+                                    <a href="url" class="text">Company News</a>
+                                    <a href="url" class="text">Corporate Social <br> Responsibility</a>
+                                    <a href="url" class="text">Careers</a> 
+                                    <a href="url" class="text">Contact Us</a>
+                                   </div>
+                             </div>
+                             <div class="col">
+                                <div class="Frame39">
+                                    <span class="Titles-footer">Regulation & Licence</span>
+                                </div>
+                                <div class="Frame49">↓</div>
+                                <div class="Frame37">
+                                    <a href="url" class="text">Legal Documents</a> 
+                                    <a href="url" class="text">Dispute Resolution</a>
+                                    <a href="url" class="text">Group</a> 
+                                    <a href="url" class="text">Regulation</a>
+                                   </div>
+                             </div>
+                </div>
+        </div>
+
+        <div class="Frame33-footer">
+            <div class="small-Container-Frame-33-footer">
+                <div class="fpm-logo-footer">
+                    <img src="assets/fpm-logo(1).png" alt="fpm-logo-footer" class="logo">
+                </div>
+                <div class="Frame66">
+                    <div class="Frame64">
+                        <span class="callus"> Call us:</span>
+                        <a href="url" class="phone">+357 25 056926</a>
+                    </div>
+                    <div class="Frame65">
+                        <span class="callus"> Email:</span>
+                        <a href="url" class="Email">supportdesk@fpmarkets.eu</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="Frame34">
+            <div class="small-Container-Frame-34-small">
+                <div class="Frame40">
+                    <span  class="Sitemap"> Sitemap</span>
+                    <span class="sitemap-text">  |   © FP Markets 2024</span>
+                </div>
+                <img src="assets/Layer 518@2x 1.png" alt="certification" class="certification">
+            </div>
+            <div class="small-Container-Frame-34-large">
+               <span> <span class="Legal-title">Legal Information:</span> <span class="Legal">The domains www.fpmarkets.eu and www.fpmarkets.com/eu are owned and operated by First Prudential Markets Ltd (registration number HE 372179), a company authorised and regulated by the Cyprus Securities and Exchange Commission (CySEC License number 371/18). First Prudential Markets Ltd registered address is 135 Omonoias, UAD Court, 7th Floor, 3045 Limassol, Cyprus. </span></span>
+               <span> <span class="Legal-title">Risk Warning:</span> <span class="Legal">CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage. 72.92% of retail investor accounts lose money when trading CFDs with this provider. You should consider whether you understand how CFDs work and whether you can afford to take the high risk of losing your money. <a href="" class="risk-link"> <span> Please read the Risk Disclosure and Warning Notice. </span> </a></span></span>
+               <span> <span class="Legal-title">Risk Warning:</span> <span class="Legal">CFDs on Virtual currencies are not suitable for all investors. They are complex, extremely risky and usually highly speculative with values subject to extreme price volatility and hence may result in losing all the invested capital over a short period of time. You should avoid trading such products if you do not have the necessary knowledge in this specific product and/or if you cannot bear the loss of the entire invested amount.</span></span>
+               <span> <span class="Legal-title">Disclaimer: </span> <span class="Legal">First Prudential Markets Ltd assumes no liability as to the accuracy or completeness of the information provided. This communication must not be reproduced or further distributed without prior permission.</span></span>
+                <span class="information">* There might be charges for certain transactions i.e. bank wire charges.<br>
+                    ** The average order execution time between the trade being received, processed and confirmed as executed by us is on average less than 40 milliseconds. As observed from our bridge provider between 01/01/2020 - 31/12/2021 (except majority of CFDs on Indices).
+                    <br>*** Terms and conditions apply.
+                    <br> ^ Sat & Sun 08:00am to 16:00pm (GMT+3).</span>
+            </div>
+        </div>
+
+    </footer>
+
     <script src="bundle.js"></script>
     <script>
+
+document.querySelector(".quickstart").addEventListener("click", function(event) {
+    event.preventDefault();
+    
+    document.querySelectorAll(".styled-hr").forEach(function(menu) {
+        menu.classList.toggle("show");
+    });
+    document.querySelectorAll(".Frame39-menu").forEach(function(menu) {
+        menu.classList.toggle("show");  
+        if (menu.classList.contains('show')) {
+            menu.style.maxHeight = menu.scrollHeight + "px"; 
+        } else {
+            menu.style.maxHeight = "0"; 
+        }
+    });
+
+    document.querySelectorAll(".Frame37-menu").forEach(function(menu) {
+        menu.classList.toggle("show"); 
+        if (menu.classList.contains('show')) {
+            menu.style.maxHeight = menu.scrollHeight + "px"; 
+        } else {
+            menu.style.maxHeight = "0"; 
+        }
+    });
+    document.querySelector(".arrow-menu").classList.toggle("up");
+});
+
+
+document.querySelector(".arrow-menu").addEventListener("click", function(event) {
+    event.preventDefault();   
+
+    document.querySelectorAll(".styled-hr").forEach(function(menu) {
+        menu.classList.toggle("show");
+    });
+    document.querySelectorAll(".Frame39-menu").forEach(function(menu) {
+        menu.classList.toggle("show");
+    });
+    document.querySelectorAll(".Frame37-menu").forEach(function(menu) {
+        menu.classList.toggle("show");
+    });
+    document.querySelector(".arrow-menu").classList.toggle("up");
+});
+
+
+document.querySelector(".close-menu").addEventListener("click", function() {
+    document.querySelector(".off-screen-menu").classList.remove("active");
+});
+
+
+const slidestext = document.querySelectorAll('.textSlide');
+const pageIndicators = document.querySelectorAll('.Frame930 div');
+
+
+let currentSlideIndex = 0;
+updateCarousel();
+
+
+function updateCarousel() {
+    
+    slidestext.forEach(slide => slide.classList.remove('active'));
+
+   
+    pageIndicators.forEach(indicator => indicator.classList.remove('active-border'));
+
+   
+    slidestext[currentSlideIndex].classList.add('active');
+   
+    pageIndicators[currentSlideIndex].classList.add('active-border');
+}
+
+
+function nextSlide() {
+    currentSlideIndex = (currentSlideIndex + 1) % slidestext.length;
+    updateCarousel();
+}
+
+
+function prevSlide() {
+    currentSlideIndex = (currentSlideIndex - 1 + slidestext.length) % slidestext.length;
+    updateCarousel();
+}
+
+
+setInterval(nextSlide, 5000);
+
+
+pageIndicators.forEach((indicator, index) => {
+    indicator.addEventListener('click', () => {
+        currentSlideIndex = index;
+        updateCarousel();
+    });
+});
+
+
+        let slideIndexcards = 0;
+const slidescarousel = document.querySelector(".Frame15");  
+const cards = document.querySelectorAll(".card"); 
+const totalCards = cards.length;
+
+
+const leftArrow = document.querySelector(".display-left-arrow-carousel");
+const rightArrow = document.querySelector(".display-right-arrow-carousel");
+
+
+function slideCarousel(n) {
+    const cardWidth = cards[0].offsetWidth;  
+    
+   
+    slideIndexcards = (slideIndexcards + n + totalCards) % totalCards;  
+
+    const translateValue = slideIndexcards * cardWidth;  
+
+    slidescarousel.style.transition = 'transform 0.5s ease';  
+    slidescarousel.style.transform = `translateX(-${translateValue}px)`;  
+
+   
+    updateArrows();
+}
+
+
+function updateArrows() {
+   
+    if (slideIndexcards === 0) {
+        leftArrow.disabled = true;
+    } else {
+        leftArrow.disabled = false;
+    }
+
+  
+    if (slideIndexcards === totalCards - 1) {
+        rightArrow.disabled = true;
+    } else {
+        rightArrow.disabled = false;
+    }
+}
+
+
+
+function plusDivscards(n) {
+    slideCarousel(n);
+}
+
+updateArrows();
+
+
 let slideIndex = 0;
 const slides = document.querySelectorAll(".slide");
+const pag1 = document.querySelector('.pag1');
+const pag2 = document.querySelector('.pag2');
 
 function showSlides(n) {
     if (n >= slides.length) slideIndex = 0;
     if (n < 0) slideIndex = slides.length - 1;
 
-    slides.forEach(slide => slide.style.display = "none"); // Hide all slides
-    slides[slideIndex].style.display = "flex"; // Show active slide
+    slides.forEach(slide => slide.style.display = "none");
+    slides[slideIndex].style.display = "flex"; 
+    if(slideIndex === 0) {
+        pag1.classList.add("active-border")
+    pag2.classList.remove("active-border");
+    } else if (slideIndex === 1){
+        pag1.classList.remove("active-border");
+        pag2.classList.add("active-border")
+    }
 }
 
 function plusDivs(n) {
@@ -100,21 +716,21 @@ function plusDivs(n) {
     showSlides(slideIndex);
 }
 
-// Initialize the first slide
+
 showSlides(slideIndex);
 
-// Optional: Auto-slide every 5 seconds
+
 setInterval(() => plusDivs(1), 5000);
 
 
-// JavaScript to toggle the menu
+
 const hamMenu = document.querySelector('.ham-menu');
 const offScreenMenu = document.querySelector('.off-screen-menu');
 
-// Add event listener to toggle the menu visibility on hamburger click
+
 hamMenu.addEventListener('click', () => {
     console.log("Hamburger menu clicked");
-    offScreenMenu.classList.toggle('active');  // Toggle visibility
+    offScreenMenu.classList.toggle('active'); 
     console.log("Is 'active' class on menu?", offScreenMenu.classList.contains('active'));
 });
 
